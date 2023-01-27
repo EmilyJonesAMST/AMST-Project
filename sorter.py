@@ -29,8 +29,7 @@ class Sorter:
                 
             else:
                 print("Item "+ str(i+1) + "/"+str(sortlength)+ " : " + Video + " : Doesnt Exsit")
-                Write(item)
-                
+                Write(item,Extention)
         chat.Message("General", "Python Search Completed")
         
 

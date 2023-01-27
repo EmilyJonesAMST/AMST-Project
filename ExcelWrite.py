@@ -1,8 +1,7 @@
 from File import Access as FS
 from utils import Video as UV
 from Timezone import GetDT as DateTime
-def FileWrite(Item):
-    Video,Extention = UV.Converter(Item)
+def FileWrite(Video,Extention):
     Type = UV.types(Extention)
     #Video ID , Name , Tag 1, Tag 2, Tag 3, Tag 4, Watched, Reviewer, Rating, Max Rating, Date Updated, Date Added
     lines = FS.Read("Videos.csv")

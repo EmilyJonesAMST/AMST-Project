@@ -41,13 +41,11 @@ class Video:
             Lines = FS.Read("Videos.csv")
             for Items in Lines:
                 Item = Items.split(",")
-                #print(Item)
-                #print(len(Item))
-                if len(Item) == 1:
-                    for i in range(0,len(Item)):
-                        if Items.__contains__(File):
-                            Out = True
-                            return Out
-            # index 6
-
+                #print(Item[1])
+                if Item[1] == File:
+                    Outbool = True
+                    break
+                else:
+                    Outbool = False
+            return Outbool
                     
